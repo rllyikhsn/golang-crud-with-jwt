@@ -1,0 +1,517 @@
+{
+	"info": {
+		"_postman_id": "7205afd6-b909-4b80-b0e1-dcafdd05e404",
+		"name": "Manajemen Buku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12800214"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"KUDANIL\",\r\n    \"Password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"KUDANIL\",\r\n    \"Password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 09:14:11 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWsucmFpaGFuLm0iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtay5yYWloYW4ubUBtaXRyYWtlcmphLnBlcnRhbWluYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTVVBFUl9BRE1JTiIsImFyZWEiOiJ7XCJSZWdpb25BcmVhc1wiOm51bGwsXCJOYW1lXCI6XCJLYW50b3IgUHVzYXRcIixcIlJlZ2lvblBUS1wiOlwiSUlcIixcIklkXCI6MjUsXCJDcmVhdGVkQXRcIjpcIjIwMjItMDQtMDRUMTg6NTE6NTMuMzEyMzE4NlwiLFwiVXBkYXRlRHRcIjpcIjE5MDAtMDEtMDFUMDA6MDA6MDBcIixcIkNyZWF0ZWRCeVwiOlwiVEVTVFwiLFwiVXBkYXRlQnlcIjpcIlwiLFwiSXNEZWxldGVkXCI6ZmFsc2UsXCJJc0FjdGl2ZVwiOnRydWV9IiwiZXhwIjoxNjkwNjgyNjM1LCJpc3MiOiJteS5QVEsuYXBwcyIsImF1ZCI6Im15LlBUSy5hcHBzIn0.tsKycBGqBjywqycAX5neHZnzv_JUn7sWm1j1jalFVeA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"PANJI\",\r\n    \"Password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"PANJI\",\r\n    \"Password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 08:53:31 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"Token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzYxMDU2MTEsInN1YiI6M30.KHIz3p6KCMX8dRja-k8HlDoiwfLBX0-BoTWRL1Zbx4M\"\n    },\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"NAMA PRODUCT\",\r\n    \"gambar\": \"GAMBAR\",\r\n    \"details\": [\r\n        {\r\n            \"name\": \"NAMA DETAIL\",\r\n            \"stock\": 10,\r\n            \"gambar\": \"GAMBAR\"\r\n        },\r\n        {\r\n            \"name\": \"NAMA DETAIL 2\",\r\n            \"stock\": 20,\r\n            \"gambar\": \"GAMBAR 2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductCreate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"NAMA PRODUCT\",\r\n    \"gambar\": \"GAMBAR\",\r\n    \"details\": [\r\n        {\r\n            \"name\": \"NAMA DETAIL\",\r\n            \"stock\": 10,\r\n            \"gambar\": \"GAMBAR\"\r\n        },\r\n        {\r\n            \"name\": \"NAMA DETAIL 2\",\r\n            \"stock\": 20,\r\n            \"gambar\": \"GAMBAR 2\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 08:08:09 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "798"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"ID\": 5,\n        \"CreatedAt\": \"2023-01-12T15:08:09.792+07:00\",\n        \"CreatedBy\": 0,\n        \"UpdatedAt\": \"2023-01-12T15:08:09.792+07:00\",\n        \"UpdatedBy\": 0,\n        \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n        \"DeletedBy\": 0,\n        \"IsDeleted\": 0,\n        \"Name\": \"NAMA PRODUCT\",\n        \"Gambar\": \"GAMBAR\",\n        \"ProductDetails\": [\n            {\n                \"ID\": 27,\n                \"CreatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                \"CreatedBy\": 0,\n                \"UpdatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                \"UpdatedBy\": 0,\n                \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                \"DeletedBy\": 0,\n                \"IsDeleted\": 0,\n                \"ProductID\": 5,\n                \"Name\": \"NAMA DETAIL\",\n                \"Stock\": 10,\n                \"Gambar\": \"GAMBAR\"\n            },\n            {\n                \"ID\": 28,\n                \"CreatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                \"CreatedBy\": 0,\n                \"UpdatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                \"UpdatedBy\": 0,\n                \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                \"DeletedBy\": 0,\n                \"IsDeleted\": 0,\n                \"ProductID\": 5,\n                \"Name\": \"NAMA DETAIL 2\",\n                \"Stock\": 20,\n                \"Gambar\": \"GAMBAR 2\"\n            }\n        ]\n    },\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"NAMA PRODUCT Update\",\r\n    \"gambar\": \"GAMBAR Update\",\r\n    \"details\": [\r\n        {\r\n            \"id\": 27,\r\n            \"name\": \"NAMA DETAIL Update22\",\r\n            \"stock\": 40,\r\n            \"gambar\": \"GAMBAR UPDA\"\r\n        },\r\n        {\r\n            \"id\": 28,\r\n            \"name\": \"NAMA DETAIL 2 Updatxxe\",\r\n            \"stock\": 40,\r\n            \"gambar\": \"GAMBAR 2 UPDA\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/product/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductUpdate",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"NAMA PRODUCT Update\",\r\n    \"gambar\": \"GAMBAR Update\",\r\n    \"details\": [\r\n        {\r\n            \"id\": 27,\r\n            \"name\": \"NAMA DETAIL Update22\",\r\n            \"stock\": 40,\r\n            \"gambar\": \"GAMBAR UPDA\"\r\n        },\r\n        {\r\n            \"id\": 28,\r\n            \"name\": \"NAMA DETAIL 2 Updatxxe\",\r\n            \"stock\": 40,\r\n            \"gambar\": \"GAMBAR 2 UPDA\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/product/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"product",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 08:15:34 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzYxMDcxMDIsInN1YiI6M30.xdGi0qsxiWMpjlNm_DOUt-RA038uvqFTK8S3MkZG3ts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 09:13:36 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"ID\": 2,\n            \"CreatedAt\": \"2023-01-12T14:57:59.591+07:00\",\n            \"CreatedBy\": 0,\n            \"UpdatedAt\": \"2023-01-12T15:02:16.373+07:00\",\n            \"UpdatedBy\": 0,\n            \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n            \"DeletedBy\": 0,\n            \"IsDeleted\": 0,\n            \"Name\": \"\",\n            \"Gambar\": \"\",\n            \"ProductDetails\": []\n        },\n        {\n            \"ID\": 3,\n            \"CreatedAt\": \"2023-01-12T14:59:02.405+07:00\",\n            \"CreatedBy\": 0,\n            \"UpdatedAt\": \"2023-01-12T15:05:16.492+07:00\",\n            \"UpdatedBy\": 0,\n            \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n            \"DeletedBy\": 0,\n            \"IsDeleted\": 0,\n            \"Name\": \"NAMA PRODUCT Update\",\n            \"Gambar\": \"GAMBAR Update\",\n            \"ProductDetails\": []\n        },\n        {\n            \"ID\": 4,\n            \"CreatedAt\": \"2023-01-12T15:02:56.229+07:00\",\n            \"CreatedBy\": 0,\n            \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n            \"UpdatedBy\": 0,\n            \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n            \"DeletedBy\": 0,\n            \"IsDeleted\": 0,\n            \"Name\": \"NAMA PRODUCT Update\",\n            \"Gambar\": \"GAMBAR Update\",\n            \"ProductDetails\": [\n                {\n                    \"ID\": 3,\n                    \"CreatedAt\": \"2023-01-12T15:02:56.24+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:02:56.24+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 4,\n                    \"CreatedAt\": \"2023-01-12T15:02:56.24+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:02:56.24+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 5,\n                    \"CreatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 6,\n                    \"CreatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 7,\n                    \"CreatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 8,\n                    \"CreatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:00.776+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 11,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 12,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 13,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 14,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 15,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL Update\",\n                    \"Stock\": 10,\n                    \"Gambar\": \"GAMBAR\"\n                },\n                {\n                    \"ID\": 16,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 17,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 18,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 19,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                },\n                {\n                    \"ID\": 20,\n                    \"CreatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:06:45.849+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 4,\n                    \"Name\": \"NAMA DETAIL 2 Update\",\n                    \"Stock\": 20,\n                    \"Gambar\": \"GAMBAR 2\"\n                }\n            ]\n        },\n        {\n            \"ID\": 5,\n            \"CreatedAt\": \"2023-01-12T15:08:09.792+07:00\",\n            \"CreatedBy\": 0,\n            \"UpdatedAt\": \"2023-01-12T15:15:34.37+07:00\",\n            \"UpdatedBy\": 0,\n            \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n            \"DeletedBy\": 0,\n            \"IsDeleted\": 0,\n            \"Name\": \"NAMA PRODUCT Update\",\n            \"Gambar\": \"GAMBAR Update\",\n            \"ProductDetails\": [\n                {\n                    \"ID\": 27,\n                    \"CreatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:15:34.365+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 5,\n                    \"Name\": \"NAMA DETAIL Update22\",\n                    \"Stock\": 40,\n                    \"Gambar\": \"GAMBAR UPDA\"\n                },\n                {\n                    \"ID\": 28,\n                    \"CreatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                    \"CreatedBy\": 0,\n                    \"UpdatedAt\": \"2023-01-12T15:15:34.368+07:00\",\n                    \"UpdatedBy\": 0,\n                    \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                    \"DeletedBy\": 0,\n                    \"IsDeleted\": 0,\n                    \"ProductID\": 5,\n                    \"Name\": \"NAMA DETAIL 2 Updatxxe\",\n                    \"Stock\": 40,\n                    \"Gambar\": \"GAMBAR 2 UPDA\"\n                }\n            ]\n        }\n    ],\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/product/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductDetail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/product/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"product",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 08:15:41 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "839"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"ID\": 5,\n        \"CreatedAt\": \"2023-01-12T15:08:09.792+07:00\",\n        \"CreatedBy\": 0,\n        \"UpdatedAt\": \"2023-01-12T15:15:34.37+07:00\",\n        \"UpdatedBy\": 0,\n        \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n        \"DeletedBy\": 0,\n        \"IsDeleted\": 0,\n        \"Name\": \"NAMA PRODUCT Update\",\n        \"Gambar\": \"GAMBAR Update\",\n        \"ProductDetails\": [\n            {\n                \"ID\": 27,\n                \"CreatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                \"CreatedBy\": 0,\n                \"UpdatedAt\": \"2023-01-12T15:15:34.365+07:00\",\n                \"UpdatedBy\": 0,\n                \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                \"DeletedBy\": 0,\n                \"IsDeleted\": 0,\n                \"ProductID\": 5,\n                \"Name\": \"NAMA DETAIL Update22\",\n                \"Stock\": 40,\n                \"Gambar\": \"GAMBAR UPDA\"\n            },\n            {\n                \"ID\": 28,\n                \"CreatedAt\": \"2023-01-12T15:08:09.793+07:00\",\n                \"CreatedBy\": 0,\n                \"UpdatedAt\": \"2023-01-12T15:15:34.368+07:00\",\n                \"UpdatedBy\": 0,\n                \"DeletedAt\": \"0001-01-01T00:00:00Z\",\n                \"DeletedBy\": 0,\n                \"IsDeleted\": 0,\n                \"ProductID\": 5,\n                \"Name\": \"NAMA DETAIL 2 Updatxxe\",\n                \"Stock\": 40,\n                \"Gambar\": \"GAMBAR 2 UPDA\"\n            }\n        ]\n    },\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/product/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductDelete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/product/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"product",
+								"2"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 09:13:57 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						}
+					],
+					"cookie": [],
+					"body": "No Authorization header provided"
+				}
+			]
+		}
+	]
+}
